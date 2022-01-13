@@ -1,0 +1,170 @@
+/************************************/
+/*            CSS INICIO            */
+/************************************/
+
+/*** BUSCA ***/
+#c-centro #busca{
+	width:300px;
+	height:300px;
+	background-color:#333;
+	float:left;
+	color: #FFF;
+}
+
+#busca{
+	-webkit-border-top-left-radius: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+	-moz-border-radius-topleft: 30px;
+	-moz-border-radius-bottomright: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+#busca #tit-busca{
+	font-size: 28px;
+	text-align:center;
+	line-height:28px;
+	margin-top:20px;
+	font-weight:500;
+}
+#busca .form-busca{
+	width:115px;
+	height:30px;
+	padding-left:10px;
+	font-family: 'Dosis', sans-serif;
+	font-size:17px;
+	margin-top:20px;
+	margin-left:20px;
+	color:#333;
+}
+#busca .op-busca{
+	font-size:18px;
+	margin-top:10px;
+	margin-left:20px;
+	float:left;
+}
+#busca #b-buscar{
+	width:64px;
+	height:64px;
+	background:url(../img/b-buscar2.jpg);
+	cursor:pointer;
+	position:relative;
+	margin:40px 0 0 30px;
+}
+#busca #b-buscar:hover{
+	background:url(../img/b-buscar2-b.jpg);
+}
+
+/*** BANNER ***/
+#c-centro #banner{
+	width:630px;
+	height:300px;
+	float:left;
+	margin-left:20px;
+	position:relative;
+}
+#banner .box-banner{
+	z-index:2;
+	width:200px;
+	height:200px;
+	background:url(../img/f-box.png) repeat;
+	position:absolute;
+	margin-top:30px;
+	margin-left:360px;
+	padding:20px;
+	color:#FFF;
+}
+.box-banner .tit-box{
+	font-size:24px;
+}
+.box-banner .desc-box{
+	margin-top:10px;
+}
+#banner .img-banner{
+	z-index:1;
+	position:absolute;
+}
+
+/*** DESTAQUES ***/
+#coluna #destaques{
+	width:650px;
+	height:auto;
+	display:table;
+	background-color:#FFF;
+	padding:25px;
+}
+#destaques #cont-dest{
+	width:650px;
+	margin-top:50px;
+}
+#cont-dest #dest1{
+	margin-right:25px;
+}
+#cont-dest #dest2{
+	margin-right:25px;
+}
+#cont-dest .box-dest{
+	width:200px;
+	float:left;
+	color:#333;
+}
+#cont-dest .box-dest:hover{
+	width:200px;
+	float:left;
+	color:#900;
+}
+.box-dest .nom-dest{
+	font-size:22px;
+	margin-top:5px;
+}
+
+/*** REVENDA ***/
+#coluna #revenda{
+	width:300px;
+	background-color:#FFF;
+	padding:20px 20px 1px 20px;
+	margin-top:20px;
+	float:left;
+}
+#revenda #cont-rev{
+	width:300px;
+	margin-top:50px;
+}
+#cont-rev .box-rev{
+	width:300px;
+	height:110px;
+	margin-bottom:20px;
+	color:#333;
+}
+#cont-rev .box-rev:hover{
+	width:300px;
+	height:110px;
+	margin-bottom:20px;
+	color:#900;
+}
+
+/*** ALUGUEL ***/
+#coluna #aluguel{
+	width:300px;
+	float:left;
+	background-color:#FFF;
+	padding:20px 20px 1px 20px;
+	margin-top:20px;
+	margin-left:20px;
+}
+#aluguel #cont-alu{
+	width:300px;
+	margin-top:50px;
+}
+#cont-alu .box-alu{
+	width:300px;
+	height:110px;
+	margin-bottom:20px;
+	color:#333;
+}
+#cont-alu .box-alu:hover{
+	width:300px;
+	height:110px;
+	margin-bottom:20px;
+	color:#900;
+}

@@ -1,0 +1,40 @@
+/************************************/
+/*       CSS EMPREENDIMENTOS        */
+/************************************/
+
+#coluna #empreendimentos{
+	width:650px;
+	height:auto;
+	display:table;
+	background:#FFF;
+	padding:25px;
+	color:#333;
+	line-height:25px;
+}
+#empreendimentos #jardim-jatai{
+	
+}
+#jardim-jatai #logo-jardim{
+	float:left;
+}
+#jardim-jatai #txt-jardim{
+	width:360px;
+	float:left;
+	margin-left:20px;
+}
+
+#empreendimentos #minha-casa{
+	
+}
+#minha-casa #txt-minhacasa{
+	width:430px;
+	float:left;
+	margin-top:20px;
+}
+#minha-casa #logo-minhacasa{
+	margin-top:20px;
+	float:left;
+}
+
+	
+	

@@ -1,0 +1,593 @@
+/*Determine a largura do seu container.*/
+ .wrap, .footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    height:100%;
+}
+.wrap-maior {
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+}
+.wrap-corpo{
+    margin-top: 2%;
+}
+section, .wrap, .wrap-maior {
+    overflow: hidden;
+}
+.fleft {
+    float:left;
+}
+.fright {
+    float:right;
+}
+span {
+    display:block;
+}
+button {
+    cursor:pointer;
+}
+/* ==========================================================================
+   Pagina Inicial
+   ========================================================================== */
+ body {
+    font-family:'Titillium Web', sans-serif;
+    background-color: #F1F5F8;
+    background-image:url(../image/bg.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    margin:0 auto;
+    padding:0;
+}
+.info-topo {
+    height:auto;
+}
+.face-topo {
+    width:200px;
+    height:45px;
+    background:red;
+}
+.tel-topo {
+    font:600 2.2em'Titillium Web';
+    line-height:45px;
+    color:#666;
+}
+header {
+    position: relative;
+    z-index: 9999;
+    height:120px;
+}
+.titulo-secao {
+    font:600 3em 'Titillium Web';
+    position:relative;
+    padding-left:20px;
+    line-height: 35px;
+    color:#2C393F;
+}
+.titulo-secao-links {
+    width:100% !important;
+    margin-bottom: 0.5em !important;
+}
+.msg-newsletter, .desc-atendimento {
+    font-size: 1.3em;
+    line-height: 14px;
+}
+.form-newsletter, .desc-atendimento {
+    float:left;
+    width:100%;
+    margin:0;
+}
+.form-newsletter {
+    float: left;
+    width: 100%;
+    margin-top:4%;
+}
+.wrap input {
+    height:30px;
+    border:none;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    color: #666;
+    margin-bottom:2% !important;
+    padding-left:5px;
+    font:400 1.4em'Titillium Web';
+}
+.bt-ok {
+    font:400 1.4em'Titillium Web';
+    height:30px;
+    background:#FFBF00;
+    border:none;
+    padding: 5px;
+}
+.item-pacotes-destaque, .item-pacotes {
+    background:#FFF;
+    margin:1% !important;
+    height:auto;
+    background: -moz-linear-gradient(45deg, transparent 0px, #FFF 0px), -moz-linear-gradient(135deg, transparent 20px, #FFF 20px), -moz-linear-gradient(225deg, transparent 0px, #FFF 0px), -moz-linear-gradient(315deg, transparent 20px, #FFF 20px);
+    background: -o-linear-gradient(45deg, transparent 0px, #FFF 0px), -o-linear-gradient(135deg, transparent 20px, #FFF 20px), -o-linear-gradient(225deg, transparent 0px, #FFF 0px), -o-linear-gradient(315deg, transparent 20px, #FFF 20px);
+    background: -webkit-linear-gradient(45deg, transparent 0px, #FFF 0px), -webkit-linear-gradient(135deg, transparent 20px, #FFF 20px), -webkit-linear-gradient(225deg, transparent 0px, #FFF 0px), -webkit-linear-gradient(315deg, transparent 20px, #FFF 20px);
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+}
+.img-pacotes-destaque, .img-pacotes {
+    margin:3%!important;
+}
+.titulo-pacotes-destaque {
+    color: #2C393F;
+    font: 600 2em'Titillium Web';
+    margin: 1%;
+    text-align: center;
+}
+.titulo-pacotes {
+    color: #666;
+    font: 400 2em'Titillium Web';
+    line-height: 25px;
+    margin: 1% 0;
+}
+.dias-pacotes {
+    font: 400 1.6em'';
+    color: #666;
+}
+.valor-pacotes {
+    font: 400 2em '';
+    margin: 0;
+    color: #666;
+}
+.lateral-menu {
+    width:38px;
+    height:120px;
+    display:block;
+}
+.menu-left {
+    background:url(../image/menu-left.png) no-repeat;
+}
+.menu-right {
+    background:url(../image/menu-right.png) no-repeat;
+    margin-top: -120px;
+}
+nav {
+    margin:0 38px;
+    height:100%;
+    background:url(../image/menu-repeat.png) repeat-x;
+    /*background: #00468C;
+
+    background: -moz-linear-gradient(45deg, transparent 0px, #00468C 0px), -moz-linear-gradient(135deg, transparent 20px, #00468C 20px), -moz-linear-gradient(225deg, transparent 0px, #00468C 0px), -moz-linear-gradient(315deg, transparent 20px, #00468C 20px);
+    background: -o-linear-gradient(45deg, transparent 0px, #00468C 0px), -o-linear-gradient(135deg, transparent 20px, #00468C 20px), -o-linear-gradient(225deg, transparent 0px, #00468C 0px), -o-linear-gradient(315deg, transparent 20px, #00468C 20px);
+    background: -webkit-linear-gradient(45deg, transparent 0px, #00468C 0px), -webkit-linear-gradient(135deg, transparent 20px, #00468C 20px), -webkit-linear-gradient(225deg, transparent 0px, #00468C 0px), -webkit-linear-gradient(315deg, transparent 20px, #00468C 20px);
+*/
+}
+.pacote-destaque, .item-pacotes-destaque, .item-pacotes {
+    background-position: bottom left, bottom right, top right, top left;
+    -moz-background-size: 50% 50%;
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+.logo {
+    margin: 0 5px!important;
+    list-style:none;
+}
+.img-logo {
+    background:url(../image/via-embarque.png) no-repeat;
+    width:254px;
+    height:107px;
+    padding:0 !important;
+    display:block;
+}
+ul {
+    list-style-position: inside;
+}
+.menu-topo {
+    padding:0;
+    margin:0;
+    overflow:hidden;
+}
+.menu-topo li {
+    float:left;
+    padding:0;
+    color:#FFF;
+    position:relative;
+    font:bold 1.45em'';
+    margin:50px 0;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+.menu-h3 {
+    font-weight:bold;
+    margin:0;
+    padding:0;
+}
+.menu-topo a, .a-menu-footer {
+    color:#DDD;
+    padding:0 5px;
+    display:block;
+}
+.menu-topo a:hover, .a-menu-footer:hover {
+    color: #FFBF00;
+}
+.slider-topo {
+    position: relative;
+    z-index: 0;
+    height:auto;
+    margin-top:-80px;
+    border: 10px solid #CCC;
+    border: 10px solid rgba(0, 0, 0, 0.15);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:0;
+}
+.img-slider {
+    max-width:100%;
+    height:auto;
+}
+.pacote-destaque {
+    position: absolute;
+    bottom: 0;
+    width:545px;
+    height:460px;
+    background:#FFBF00;
+    background:rgba(255, 191, 0, 0.7);
+    margin-top:10%;
+}
+.pacote-destaque-box {
+    width:250px;
+    height:150px;
+    position:absolute;
+    bottom:0;
+    padding:5%;
+}
+.dias-destaque {
+    font-size: 2.2em;
+    margin: 1%;
+    color: #222;
+}
+.lugar-destaque {
+    font: 400 3.5em'Titillium Web';
+    color: #222;
+    margin: 1%;
+    line-height: 30px;
+}
+.a-partir-destaque {
+    color: #222;
+    margin: 1%;
+    font-size: 1.4em;
+}
+.valor-destaque {
+    color: #222;
+    margin: 1%;
+    font: 400 3em'Titillium Web';
+    line-height: 30px;
+}
+main {
+    /*background:blue;*/
+    height:auto;
+}
+.newsletter, .atendimento {
+    height:auto;
+    margin:1% !important;
+}
+.pin-titulo {
+    background:url(../image/pin-titulo.png) no-repeat center;
+    width:20px;
+    height:35px;
+    position:absolute;
+    left:0px;
+}
+.pacotes-destaque {
+    height:auto;
+    /*background:pink;*/
+    margin-bottom:1% !important;
+}
+.pacotes {
+    height:auto;
+}
+.titulo-secao-pacotes {
+    width:290px !important;
+}
+.form-pesquisar-pacotes {
+    float:right !important;
+}
+aside {
+    height:auto;
+}
+.bolas {
+    height:auto;
+    margin-top:1%!important;
+    overflow:hidden;
+}
+.titulo-bolas {
+    color:#0059B2;
+    margin: 10% 0 0;
+    font: 600 2.3em'';
+    line-height: 23px;
+}
+.desc-bolas { 
+    font-size: 1.5em;
+    line-height: 20px;
+    color: #888;
+    margin: 0;
+}
+.links-uteis {
+    height:auto;
+    margin-top:1%!important;
+}
+.li-links-uteis a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #2C393F;
+    font: 400 1.8em 'Titillium Web';
+}
+.li-links-uteis a:hover{
+    text-decoration: underline;
+}
+.ul-links-uteis{
+    list-style: none;
+    padding-left: 2.5em;
+    clear: both;
+}
+footer {
+    width:100%;
+    height: auto;
+    overflow: hidden; 
+    background: #00a3d9; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzAwYTNkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDQ2OGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjN2RiOWU4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(top,  #00a3d9 1%, #00468c 100%, #7db9e8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#00a3d9), color-stop(100%,#00468c), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #00a3d9 1%,#00468c 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #00a3d9 1%,#00468c 100%,#7db9e8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #00a3d9 1%,#00468c 100%,#7db9e8 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #00a3d9 1%,#00468c 100%,#7db9e8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3d9', endColorstr='#7db9e8',GradientType=0 ); /* IE6-8 */
+    
+    border-bottom: 10px solid #CCC;
+    border-top: 10px solid #CCC;
+    box-shadow: 10px solid rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px solid rgba(0, 0, 0, 0.15);
+    webkit-box-shadow: 10px solid rgba(0, 0, 0, 0.15); 
+    padding:0;
+    margin-top: 3%;
+}
+.menu-footer, .footer-fale-conosco, .footer-formas-pagamento{
+    float: left;
+}
+.footer{
+    padding: 1% 0;
+}
+.menu-footer, .a-menu-footer, .footer-formas-pagamento, .footer-fale-conosco p, .footer-fale-conosco h3{
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+.menu-footer{
+    font: 600 1.7em 'Titillium Web';
+}
+.li-menu-foorter{
+    text-decoration: none;
+}
+.menu-footer ul{
+    margin: 0;
+    text-decoration: none;
+    list-style-position: outside !important;
+}
+.footer-formas-pagamento{
+    margin: 2em 2em 2em 4em;
+    text-align: center;
+}
+.footer-formas-pagamento h3{
+    font: 400 1.8em 'Titillium Web';
+    margin: 0;
+}
+.copyright{
+    font: 400 1.3em 'Titillium Web';
+}
+.logo-formas-pagamento{
+    min-width: 268px;
+    height: 35px;
+    display: block;
+    background: url(../image/logo-pagamentos.png) no-repeat center;
+    margin: 2% 0 4% 0;
+}
+.footer-fale-conosco{
+    text-align: center;
+    margin-left: 5em;
+}
+.footer-fale-conosco p{
+    font: 400 1.4em 'Titillium Web';
+    margin: 0;
+}
+.email-footer{
+    margin: 0.5em 0 0.5em 0 !important;
+}
+.footer-fale-conosco h3{
+    font: 600 2.0em 'Titillium Web';
+    margin: 0;
+}
+.logo-indexis{
+    min-width: 91px;
+    min-height: 34px;
+    display: block;
+    background: url(../image/logo-indexis.png) no-repeat center;
+    padding: 7% 0;
+}
+/* ==========================================================================
+   Pagina Contato
+   ========================================================================== */
+.title-pages{
+    font: 600 5em 'Titillium Web';
+    margin: 0;
+}
+.title-pages span{
+    position: relative;
+    top: 0.45em;
+    float: left;
+}
+.section-contato p{
+    margin: 0;
+}
+.section-contato{
+    margin-bottom: 5%;
+}
+.div-email{
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+}
+.div-telefone, .div-email, .div-endereco{
+    float: left;
+    font: 400 1.6em 'Titillium Web';
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+.div-endereco{
+    width: 37%;
+}
+.form-contato p, .form-contato1 p{
+    font: 400 1.6em 'Titillium Web';
+    margin: 0;
+}
+.form-contato1{
+    min-width: 50%;
+    float: right;
+}
+.input-msg{
+    padding-bottom: 20%;
+}
+.form-contato{
+    min-width: 50%;
+    float: left;
+}
+.form-contato1 button{
+    border: none;
+    float: right;
+    padding: 1% 4%; 
+    margin-right: 3%;
+    background: #222;
+    color: #FFBF00;
+    font: 600 1.8em 'Titillium Web';
+}
+.form-contato1 button:hover{
+    background: #FFBF00;
+    color: #222;
+}
+.form-contato input, .form-contato1 input{
+    min-width: 95%;
+    min-height: 35px;
+}
+.fb-contato{
+    clear: both;
+    min-width: 240px;
+    min-height: 220px;
+    background: #fff;
+}
+.aside-contato section{
+    padding-bottom: 10%;
+}
+.atendimento-contato{
+    width: 100% !important;
+}
+.desc-atendimento-contato{
+    padding-left: 10%;
+}
+/* ==========================================================================
+   Pagina Equipe
+   ========================================================================== */
+.article-equipe{
+    background: #fff;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    margin-bottom: 5% !important; 
+}
+.info-skype, .info-email{
+    float: right;
+    font: 400 2.2em 'Titillium Web';
+}
+.image-equipe{
+    margin: 1% !important;
+}
+.nome-equipe{
+    font: 600 3.6em 'Titillium Web';
+    width: 100%;
+}
+.cargo-equipe{
+    font: 600 1.6em 'Titillium Web';
+}
+.info-email,.info-skype, .cargo-equipe, .nome-equipe{
+    margin: 0;
+    text-align: right;
+}
+.icon-skype, .icon-email{
+    display: block;
+    float: right;
+}
+.icon-skype{
+    width: 30px;
+    height: 30px;
+    background: url(../image/icon-skype.png) no-repeat;
+    padding-bottom: 3%;
+}
+.span-info{
+    float: right;
+    padding-left: 2%;
+}
+.icon-email{
+    width: 30px;
+    height: 20px;
+    background: url(../image/icon-email.png) no-repeat;
+    margin-top: 2%;
+}
+.div-info-pessoa{
+    height: auto;
+    overflow: hidden;
+}
+.div-info-pessoa p{
+    width: 100%; 
+    height: auto;
+}
+/* ==========================================================================
+    Pagina Videos
+   ========================================================================== */
+.icon-play{
+    display:block;
+    background:url(../image/icon-play.png) no-repeat;
+    width: 34px;
+    height: 34px;
+    border:none;
+    float:left;
+    margin: 0 0 2% 1%;
+    position: relative;
+}
+/* ==========================================================================
+       Pagina Empresa
+   ========================================================================== */
+
+.texto-empresa{
+    font: 600 1.8em 'Titillium Web';
+}
+/* ==========================================================================
+       Pagina Localizacao
+   ========================================================================== */
+.div-endereco-localizacao, .div-email-localizacao{
+    font: 400 2.0em 'Titillium Web' !important;
+}
+.div-email-localizacao{
+   border-right:none !important;
+}
+.div-endereco-localizacao p{
+    line-height: 1.3 !important;
+}
+.div-endereco-localizacao p:first-child{
+    padding-bottom: 6% !important;
+}
+.section-localizacao{
+    margin-top: 4%;
+}
+.div-email-localizacao p:first-child{
+    line-height:1 !important;
+}
+.div-email-localizacao p:last-child{
+    padding-top: 3%;
+}
+

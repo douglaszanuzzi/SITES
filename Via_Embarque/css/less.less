@@ -1,0 +1,437 @@
+/* ==========================================================================
+   Normatização CSS
+   ========================================================================== */
+ html, button, input, select, textarea {
+    color: #444;
+    font-family:'Noto Sans', sans-serif;
+}
+a {
+    text-decoration:none;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+img {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+body {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+    -ms-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+    -webkit-text-stroke: 1px transparent;
+    -moz-text-stroke: 1px transparent;
+    -ms-text-stroke: 1px transparent;
+    text-stroke: 1px transparent;
+}
+h1, h2, h3, h5, h6 {
+    font-weight: normal; 
+}
+b {
+    font-weight: 700;
+}
+/* ==|=======================================================================
+   Grid //  http://semantic.gs/ 
+   ========================================================================== */
+
+/*Altere estes valores de acordo com a largura das colunas, largura das margens e o número de colunas do seu grid.*/
+ @column-width: 20;
+ @gutter-width: 20;
+ @columns: 25; 
+ @gridsystem-width: (@column-width*@columns) + (@gutter-width*@columns) * 1px;
+
+/*Delete a linha abaixo se desejar trabalhar com valores em pixel.*/
+ @total-width: 100%;
+ .clearfix() {
+    *zoom:1;
+    &:before, &:after {
+        content:"";
+        display:table;
+    }
+    &:after {
+        clear:both;
+    }
+}
+body {
+    width: 100%;
+    .clearfix;
+}
+.row(@columns:@columns) {
+    display: block;
+    width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width);
+    margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1);
+    .clearfix;
+}
+.column(@x, @columns:@columns) {
+    display: inline;
+    float: left;
+    width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
+    margin: 0 @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+.push(@offset:1) {
+    margin-left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+.pull(@offset:1) {
+    margin-right: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+/* ==|=======================================================================
+  Layout 
+   ========================================================================== */
+ .header, .pacotes-destaque, .pacotes, .bolas, .links-uteis {
+    .column(25);
+}
+.img-pacotes-destaque {
+    .column(24);
+}
+.img-pacotes {
+    .column(12);
+}
+main {
+    .column(18);
+}
+aside {
+    .column(7);
+}
+.newsletter {
+    .column(16);
+}
+.atendimento {
+    .column(9);
+}
+.titulo-secao {
+    .column(14);
+}
+.msg-newsletter {
+    .column(9);
+}
+.form-newsletter input, .img-bolas {
+    .column(10.5);
+}
+.info-bolas {
+    .column(14.5);
+}
+.item-pacotes-destaque, .item-pacotes {
+    .column(12.5);
+}
+.logo-indexis{
+    .column(3);
+}
+.footer-fale-conosco{
+    .column(7);
+}
+.footer-formas-pagamento{
+    .column(10);
+}
+.menu-footer{ 
+    .column(5);
+} 
+.article-equipe{
+    .column(25);
+}
+.image-equipe{
+    .column(10);
+}
+.div-info-pessoa{
+    .column(15);
+}
+.imagem-fachada{
+    .column(25);
+}
+.mapa iframe{
+    .column(25);
+}
+/* =WordPress Core
+-------------------------------------------------------------- */
+ .alignnone {
+    margin: 5px 20px 20px 0;
+}
+.aligncenter, div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+ @media screen and (max-width: 1015px) {
+    .menu-box1, .menu-box2 {
+        .column(7);
+        float:right;
+    }
+    .img-pacotes {
+        .column(24);
+    }
+    .titulo-pacotes, .dias-pacotes, .valor-pacotes {
+        margin-left:3%;
+        margin-right:3%;
+    }
+    .info-item-pacotes {
+        clear:both;
+        height:120px;
+        overflow:hidden;
+    }
+    .logo {
+        .column(11);
+    }
+    .img-logo {
+        margin:0 auto;
+    }
+    .quebrou, .quebrou1 {
+        width:100%;
+    }
+    .quebrou {
+        margin: 10px 0 0 0px !important;
+    }
+    .quebrou1 {
+        margin: 10px 0 0 0px !important;
+    }
+    .footer{
+        .column(25);
+    }
+}
+@media screen and (max-width: 990px) {
+    .section-contato{
+        padding-bottom: 10%;
+    }
+    .div-endereco, .div-telefone, .div-email{
+        .column(25);
+        padding-bottom: 4%;
+        font-size: 2.2em;
+    }
+    .div-email-localizacao{
+        border:none;
+    }
+}
+@media screen and (max-width: 960px) {
+    .footer-fale-conosco{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer-fale-conosco{
+        .column(5);
+        margin: 0;
+    }
+     /********************
+        page equipe
+    *********************/
+    .image-equipe{
+        .column(12.5);
+    }
+    .div-info-pessoa{
+        .column(12.5)
+    }
+}
+@media screen and (max-width: 880px){
+    .image-equipe{
+        .column(25);
+    }
+    .div-info-pessoa{
+        .column(25);
+    }
+}
+@media screen and (min-width: 769px) {
+    .pacote-destaque {
+        background: -webkit-linear-gradient(225deg, transparent 14.3%, rgba(255, 191, 0, 0.7) 14.3%), -webkit-linear-gradient(225deg, transparent 68%, rgba(255, 191, 0, 0.7) 68%), -webkit-linear-gradient(225deg, transparent 100%, rgba(255, 191, 0, 0.7) 100%), -webkit-linear-gradient(225deg, transparent 60%, rgba(255, 191, 0, 0.7) 60%);
+        background-position: bottom left, bottom right, top right, top left;
+        -moz-background-size: 50% 50%;
+        -webkit-background-size: 50% 50%;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-formas-pagamento, .logo-indexis, .footer-fale-conosco, .menu-footer{
+        .column(25);
+    }
+    .menu-footer{
+        padding-bottom: 5%;
+    }
+    .menu-footer ul{
+        padding-left: 40%;
+    }
+    .info-bolas {
+        .column(25);
+    }
+    .img-bolas {
+        display: block;
+        margin: 0 auto;
+        width: 102px;
+        float: none;
+    }
+    .titulo-bolas, .desc-bolas {
+        text-align:center;
+    }
+    .msg-newsletter {
+        width:100%;
+    }
+    .pacote-destaque {
+        width: 100%;
+        height: 30%;
+        background:none;
+    }
+    .pacote-destaque-box {
+        background:#FFBF00;
+        background:rgba(255, 191, 0, 0.7);
+    }
+    .dias-destaque {
+        line-height:30px;
+    }
+    .dias-destaque, .lugar-destaque, .a-partir-destaque, .valor-destaque {
+        float:left;
+    }
+    .pacote-destaque-box {
+        width:100%;
+        height:auto;
+        padding:0;
+    }
+    .footer{
+        .column(25);
+    }
+    /****************
+        Page Contato
+    *****************/
+    .section-contato{
+        .column(25);
+    }
+    .div-endereco{
+        width: 100%;
+    }
+    .form-contato, .form-contato1{
+        .column(25);
+    }
+    .atendimento-contato{
+        font-size: 85%;
+    }
+}
+@media screen and (max-width: 480px) {
+    main, aside, .newsletter, .atendimento, .item-pacotes-destaque, .item-pacotes, .titulo-secao-atendimento, .footer{
+        .column(25);
+    }
+    .img-bolas, .li-links-uteis {
+        .column(10.5);
+    }
+    .info-bolas {
+        .column(14.5);
+    }
+    .img-pacotes {
+        .column(12);
+    }
+    .titulo-secao-links{
+        font-size: 4em;
+    }
+    .newsletter {
+        margin-bottom:0 !important;
+    }
+    .tel-topo {
+        font-size:1.6em;
+        text-align:center;
+        width:100%;
+        margin:2%;
+    }
+    .info-item-pacotes {
+        clear:none;
+        height:auto;
+    }
+    .slider-topo{
+        display: none;
+    }
+    /*****************
+        Page Contato
+    ******************/
+    .form-contato, .form-contato1{
+        .column(25);
+    }
+    .div-endereco, .div-telefone, .div-email{
+        .column(25);
+        padding-bottom: 4%;
+        font-size: 1.7em !important;
+    }
+    .atendimento-contato{
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .info-skype, .info-email{
+        font-size: 1.8em;
+    }
+    .nome-equipe{
+        font-size: 3.0em;
+    }
+}

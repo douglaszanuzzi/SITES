@@ -1,0 +1,13 @@
+/************************************/
+/*         CSS FALE CONOSCO         */
+/************************************/
+
+#coluna #empreendimentos{
+	width:650px;
+	height:auto;
+	display:table;
+	background:#FFF;
+	padding:25px;
+	color:#333;
+	line-height:25px;
+}

@@ -1,0 +1,124 @@
+/************************************/
+/*            CSS IMOVEL            */
+/************************************/
+
+#c-centro #tit-busca{
+	font-size:24px;
+	font-weight:600;
+	color:#900;
+}
+#c-centro #campo-busca{
+	width:950px;
+	height:35px;
+	margin-top:10px;
+}
+#campo-busca .form-busca{
+	height:35px;
+	font-family: 'Dosis', sans-serif;
+	color:#777;
+	border:#CCC solid 1px;
+	font-size:16px;
+	padding:0 0 0 5px;
+	margin-right:10px;
+	float:left;
+}
+#campo-busca .crt-busca{
+	color:#666;
+	font-size:18px;
+	float:left;
+	margin-top:7px;
+}
+#campo-busca .checkbox{
+	margin:12px 5px 0 5px;
+	float:left;
+}
+#campo-busca #lcz{
+	margin-left:15px;
+}
+#campo-busca .buscar{
+	background:url(../img/b-buscar.jpg);
+	width:40px;
+	height:40px;
+	float:left;
+	margin-left:15px;
+}
+
+#coluna #detalhes-imovel{
+	width:700px;
+	height:auto;
+	display:table;
+	background-color:#FFF;
+	padding-bottom:20px;
+}
+#detalhes-imovel #tit-resultado{
+	width:670px;
+	padding:10px;
+	background-color:#EEE;
+	margin:5px 0 0 5px;
+	float:left;
+}
+#detalhes-imovel #tit-resultado p{
+	font-size:18px;
+	font-weight:600;
+	color:#333;
+	
+}
+#detalhes-imovel #coluna-esq{
+	width:250px;
+	height:auto;
+	margin-top:20px;
+	margin-left:20px;
+	float:left;
+}
+#coluna-esq #ficha-tecnica{
+	width:250px;
+	height:auto;
+	color:#333;
+	line-height:25px;
+}
+#coluna-esq #fale-conosco{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#detalhes-imovel #fotos{
+	width:390px;
+	height:auto;
+	float:right;
+	margin-top:20px;
+	margin-right:10px;
+}
+#fotos .img{
+	width:120px;
+	height:120px;
+	background-color:#666;
+	float:left;
+	margin: 0 10px 10px 0;
+}
+#detalhes-imovel #interessado{
+	width:380px;
+	height:auto;
+	margin-right:20px;
+	float:right;
+	color:#333;
+}
+#interessado .form{
+	width:380px;
+	height:30px;
+	border:1px solid #CCC;
+	margin-bottom:5px;
+}
+#interessado #f-mensagem{
+	width:380px;
+	height:80px;
+	border:1px solid #CCC;
+}
+#interessado #b-enviar{
+	background:url(../img/b-enviar.jpg);
+	width:90px;
+	height:35px;
+	cursor:pointer;
+	float:right;
+	margin-top:10px;
+}
+	
+	
